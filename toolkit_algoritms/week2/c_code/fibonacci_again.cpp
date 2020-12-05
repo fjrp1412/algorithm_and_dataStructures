@@ -2,39 +2,51 @@
 
 
 long long Pisano_period(long long m){
-
 	long long prev = 0;
 	long long curr = 1;
-	long long result;
+	long long result = 0;
 
-	for(int i = 0; i < m * m; i++){
-		result = (prev + curr) % m;
-		prev = curr;
-		curr = result;
+	for(int i = 0; i < m*m; i++){
+
+		long long temp = 0;
+		temp = curr;
+		curr = (prev + curr) % m;
+		prev = temp;
+
 		if(prev == 0 && curr == 1){
-			return i++;
+			result = i+1;
 		}
-
 	}
+	return result;
 
 }
 
 
 long long fib_again(long long n, long long m){
-	long long remainder = n % Pisano_period(m);
-	long long prev = 0;
-	long long actual = 1;
-	long long res = remainder;
+	long long pisano = Pisano_period(m);
+	n = n % pisano;
 
-	for(int i = 1; i < remainder; i ++){
-		res = (prev + actual)  % m;
-		prev = actual;
-		actual = res;
+	long long prev = 0;
+	long long curr = 1;
+
+	if(n == 0){
+		return 0;
+	}
+	else if(n == 1){
+
+		return 1;
 	}
 
-	return res % m;
+	for(int i = 0; i < n-1; i++){
 
+		long long temp = 0;
+		temp = curr;
+		curr = (prev + curr) % m;
+		prev = temp;
+	}
 
+	return curr % m;
+	
 }
 
 
