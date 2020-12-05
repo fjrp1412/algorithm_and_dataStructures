@@ -1,0 +1,17 @@
+La principal ventaja y uso de la Big O notation es poder resumir la funcion que determina el crecimiento de un algoritmo con respecto a los inputs (normalmente, teniendo en cuenta inputs "n" que tienden al infinito)
+
+Por ejemplo:
+Ecuacion normal: 3n^2 + 5n + 2
+Big-O : O(n^2) -----> Podemos observar que, primero nos ahorramos toda la expresión de la ecuacion que determina el crecimiento del algoritmo, segundo que se ignoran las constantes (todo aquello que no sea n) y se agarrá el "n" mas representativo (el de mayor tamaño de exponente o el que, a medida que crece el input, mayor es el valor de está n con respecto al resto)
+
+
+Una advertencia importante!
+La big O es muy util si, pero a su vez pierde u omite numerosos valores que pueden generar un mayor o menor tiempo de ejecucion
+
+Si tenemos dos algoritmos tal que:
+A) 3n^2 + 10n + 20
+B) 3n^2 + 5n + 2
+
+Estos dos algoritmos continuarían teniendo una O grande de O(n^2), sin embargo, por las constantes y factores multiplos, podemos darnos cuenta que la opcion B correria mas rapido que la A aun ambas teniendo la misma Big O
+
+Otra advertencia importante, es el hecho de que Big O solo cuenta o toma en cuenta entradas "asintoticas", es decir, de alguna manera nos dice como crecerá la salida según un gran numero de entradas, mas no nos dirá información específica sobre una entrada en específico

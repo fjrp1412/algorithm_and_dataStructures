@@ -1,0 +1,20 @@
+Calcular el tiempo de ejecución de un codigo es una tarea titanica, muy dificil de estimar y que en la practica, es inviable, ya que habria que conocer el detalle de cada dispositivo, arquitectura, sofwtare, etc. En el que se corriera el programa, lo cual por obvias eazones, es una locura
+
+Por lo tanto se creo un sistema estandarizado para el manejo de tiempo o estimado de ejecucion, la idea basica de esto es:
+
+"Todo este tipo de problemas pueden multiplicar el tiempo de ejecucion por una (muy larga) constante"
+
+La respuesta a este problema, es considerar tiempos de ejecucion asintoticos. Basicamente, cómo escala el tiempo de ejecucion en funcion del tamaño del input recibido
+
+Es decir, como escala (si de manera linea, exponencial, potencial, logaritmica, constante) la salida en funcion de los datos de entrada que recibe, con que tipo de propocion afecta el input, al proceso del output
+
+La jerarquia de propocion del mas eficiente al menos eficiente (dentro de los mas comunes) es:
+N = input
+
+1) log n
+2) raiz cuadrada de n
+3) n (lineal)
+4) nlogn 
+5) n^2
+6) 2^n
+
