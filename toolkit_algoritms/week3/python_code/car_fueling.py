@@ -1,25 +1,22 @@
+# python3
+import sys
 
 
-def MinRefills(x, n, L):
-    numRefills = 0
-    currentRefills = 0
-    while(currentRefills <= n):
-        lastRefills = currentRefills
+def compute_min_refills(distance, tank, stops):
+    count = 0
+    prev = 0
+    stops.append(distance)
+    for stop in stops:
+        if(stop < tank):
+            prev = stop
+        else:
+            count += 1
+            tank += prev
 
-
-        while(currentRefills <= n and (x[currentRefills + 1] - x[lastRefills]) <= L):
-            currentRefills += 1
-
-        if(currentRefills == lastRefills):
-            return -1
-
-        if(currentRefills <= n):
-            numRefills += 1
-
-    return numRefills
-
-
-
+        if(tank >= distance):
+            return count
+    return -1
 
 if __name__ == '__main__':
-    pass
+    d, m, _, *stops = map(int, sys.stdin.read().split())
+    print(compute_min_refills(d, m, stops))
