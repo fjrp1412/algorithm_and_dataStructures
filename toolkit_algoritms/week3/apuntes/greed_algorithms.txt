@@ -1,0 +1,11 @@
+Los aglrotimos voraces son uno de los tipos de algoritmos mas sencillos de emplear
+
+Son una forma muuy natural o rudimentaria de intentar de solventar un problema
+
+General Strategy
+
+1) Analisas el problema
+2) Realizas una greedy choice
+3) Pruebas que esa greedy choice sea un safe move
+4) Reduces el problema a un subproblema del mismo tipo
+5) Solventas el subproblema de la misma manera
