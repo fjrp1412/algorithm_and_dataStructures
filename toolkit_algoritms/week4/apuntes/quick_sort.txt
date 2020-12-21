@@ -1,0 +1,14 @@
+El quick sort es uno de los algoritmos de ordenamiento mas eficientes y ampliamente utilizados. Emplea el metodo de divide and conquer o de divide y vencerás
+
+1) Esta basado en comparaciones
+2) Su tiepo de ejecucion es O(n log n)
+3) Altamente eficiente en la practica
+
+
+El algoritmo consiste en:
+
+1) Agarrar o escoger un pivote (existen multiples tecnicas de eleccion de pivote, en este caso optaremos por uno poco eficiente que seria el primer eleemtno)
+
+2) Ordenar la lista en funcion de dicho elemento, poniendo los elementos menores a ese pivote a la izquierda y los mayores a la derecha
+
+3) Implementar de manera recursiva a la izquieda y derecha del pivote el algoritmo de ordenamiento

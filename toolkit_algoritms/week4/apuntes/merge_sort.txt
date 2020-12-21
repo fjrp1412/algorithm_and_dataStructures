@@ -1,0 +1,5 @@
+ El merge sort es un algoritmo que consiste en la tecnica de divide y venceras (divide and conquer)
+
+ consiste basicamente en tener un array y sub dividir dicho array en 2 y luego hacer una llamada recursiva sobre dichas mitades y asi sucesivametne hasta que se llegue a un array de 1 elemento
+
+ Seguido de eso, se devuelven los valores mezclados según su lugar en un tercer array
