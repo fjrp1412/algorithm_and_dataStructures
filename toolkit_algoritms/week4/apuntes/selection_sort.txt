@@ -1,0 +1,12 @@
+El selection sort (u ordenamiento por seleccion), es uno de los mas basicos y simples algoritmos de ordenamiento
+
+Este algoritmo consiste en:
+
+1) Encontrar el menor elemento del arreglo
+
+2) Segun la posicion del menor elemento se hace una de las siguientes cosas:
+	2.1) Si ya está en la primera posicion de dicho array (o parte del array que se evalua), entonces no se mueve de su lutar
+
+	2.2) Si no está en el lugar correspondiente, entonces intercambia el valor guardado en la posicion que le corresponde y se intercambian lugares
+
+3) Seguido de eso, se repite el mismo proceso, pero desde pos_inicial + i, siento "i" el indice donde stamos buscando su valor correcto segun el orden

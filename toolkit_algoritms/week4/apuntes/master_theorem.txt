@@ -1,0 +1,21 @@
+El teorema maestro (o master theorem) habla de la relacion en formulas matematicas para estimar el valor de notacion sintotica o de Big O de un algoritmo
+
+El teorema dice tal que:
+
+Si tienes una relacion de recurrencia T(n) igual a una constante "a" multiplicado T(n/b) veces (redondeo arriba u abajo) mas un polinomio O(n^d), es decir un polinomio n de grado d 
+
+(la formula seria al asi)
+T(n) = a * T(n/b) + O(n^d)
+
+para constantes a > 0, b > 1, d >= 0, entonces:
+
+Hay 3 subcasos:
+
+1) O(n^d) si d > logb(a) ------> si "d" es mayor al log base "b" de "a", entonces la solucion es polinomial en n 
+
+2) O(n^d log n) si d == logb(a) ------> Si "d" es exactamente igual al log base "b" de "a", entonces la solucion es polinomial con un factor logaritimco
+
+3) o(n^logb(a)) si d < logb(a) ------> Si "d" es menor al log base "b" de "a", entonces la relacion es n a la logaritmo base "b" de "a"
+
+
+= a *( 1-r^2 / 1-r )
