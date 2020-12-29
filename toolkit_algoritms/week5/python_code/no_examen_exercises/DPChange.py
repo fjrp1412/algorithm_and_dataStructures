@@ -9,7 +9,10 @@ def DPChange(money, coins):
 
         #For every value between 0 and money, will get the minimum amount of coins to complete that value
         for i in range(0, len(coins)):
+
+            #If m(the number "m" between 0 and money what we want to know minimum change) es equal or higher than the every coin in the array coins
             if(m >= coins[i]):
+                #we save the number of coins needed for that coin[i] 
                 numCoins = MinNumCoins[m - coins[i]] + 1
 
                 if(not bool(MinNumCoins[m])):
