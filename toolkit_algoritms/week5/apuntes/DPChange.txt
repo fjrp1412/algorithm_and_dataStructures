@@ -1,0 +1,13 @@
+En este script lo que se realiza es lo siguiente
+
+1) Creamos un array de monedas minimas necesarias para cada numero entre 0 y el monto a cambiar, donde cada indice equivale a un monto a devolver y cada valor del indice equivale a la cantidad de monedas necesarias para devolver dicho monto, algo asi:
+
+A = [0,1,2,3,4,1] -----> el indice "5" equivale a hacer un cambio de "5"$ y el valor de ese indice(1 en este caso) es la cantidad minima de monedas necesarias para devolver ese monto, es decir, para devolver un monto de 5$ se necesita de una unica moneda
+
+2) Por defecto, el valor de cada indice, excluyendo el 0, sera None o infinito, luego se irán sustituyendo
+
+3) Iteramos desde 0 hasta "money" que vendria a ser el cambio que estamos buscando
+
+4) Sii "m" (que seria el valor m entre 0 y money) es mayor o igual a la moneda de esa iteracion, guardamos la cantidad de monedas necesarias(basandonos en la moneda de esa iteracion) para conseguir dicho cambio
+
+5) Luego comprobamos si el valor del indice "m" es None o infinito, de ser asi, simplemente guardamos la cantidad de monedas, en caso contrario, comparamos si la variable "cantidad de monedas" es menor al valor del indice "m", de ser asi, se sustituyen valores, siendo este, el nuevo minimo para la posicion "m"
