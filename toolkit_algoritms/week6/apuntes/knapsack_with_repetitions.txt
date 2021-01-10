@@ -1,0 +1,3 @@
+En este problema, podemos tomar cualquier cantidad de un item especificado, es decir, su valor se puede fragmentar, se puede tomar o todo el item o una minima parte de este
+
+
