@@ -1,0 +1,24 @@
+Las linked lists son listas que funcionan parecido a un vector o un array
+
+Estas consisten en un primer nodo llamado "head" donde guarda el valor de ese nodo (un numero, por ejemplo, tambien puede ser un objeto) y guarda un puntero al siguiente nodo de la lista y asi con cada nodo enlazado 
+
+Las operaciones que se pueden realizar con una lista son:
+
+PushFront(key) -------> add to front
+Key TopFront() ------> return front item
+PopFront() -------> remove front item
+PushBack(key) ----> add to back
+key TopBack() -----> return back item
+PopBack() -----> remove back item
+Boolean Find(key) ----> is key in list?
+Erase(key) -----> remove key from list
+Boolean Empty() ------> empty list?
+AddBefore(Node, key) ----> adds key before node
+AddAfter(Node, Key) -----> adds key after node
+
+
+Una de las caracteristicas de las singly linked list, es que estás solo tienn un camino o un nodo asignnado, solo tienen una conexion con el nodo siguiente, es decir, si tenemos
+
+a ---> b ---> c ----> d
+
+Solo podemos ir hacia adelante, es decir, podemos ir de "b" a "c" pero no de "c" a "d". Solo guardán un puntero al siguiente nodo de la lista, no al anterior a este

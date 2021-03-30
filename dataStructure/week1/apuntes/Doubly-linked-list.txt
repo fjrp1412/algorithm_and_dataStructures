@@ -1,0 +1,4 @@
+Este tipo de linked list funcionan de igual manera que las singly, pero son mas eficientes con una gran cantidad de operaciones a costa de ocupar mas espacio en memoria
+
+
+Este consiste en el mismo principio de las singly, guardar el valor del nodo y un puntero a su siguiente nodo de la lista. Sin embargo, como bien indica el nombre, está vez no solo se almacenará el putnero al nodo siguiente, sino que ademas, guardaremos un puntero al nodo anterior al que estamos, de esta manera es posible volver desde un nodo "c" a un nodo "b" 
