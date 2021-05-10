@@ -1,0 +1,20 @@
+Las stacks o en español "pilas" son un tipo de estructura de datos abstracto. Está principalmente funciona de manera que podamos acceder de manera rapida al primer elemento de la pila
+
+Este primer elemento, sería en realidad el ultimo elemento agregado o el mas resiente agreado a la pila
+
+El concepto de este tipo de datos es como las bandejas en un restaurante, las primeras bandejas en recogerse son las ultimas en colocarse (es decir, las que están en la cima)
+
+Es decir entre mas arriba esté el elemento, mas nuevo es dentro de está cola y entre mas abajo está, mas tiempo ha estado en la cola
+
+
+Las operaciones de los stacks son:
+
+1) Push(key) -----> adds key to collection
+
+2) Key Top() -----> return most recently-added key
+
+3) Key Pop() -----> removes and returns the most recently-added key
+
+4) Boolean Empty() -----> are the stack empty?
+
+Son especialmente utiles cuando hay que hacer un seguimiento de lo que ha sucedido en este orden en particular (Un ejemplo de estó es en los linters, interpretes o compiladores, donde emplean stacks para verificar si un parentesis, llave, corchete o cualquier char de este estilo, esté cerrado)
