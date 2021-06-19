@@ -1,0 +1,4 @@
+.vimspector.json
+env/
+resources/
+node_modules/
